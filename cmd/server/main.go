@@ -11,6 +11,7 @@ import (
 func main() {
 	cfg := config.Load()
 
+	http.HandleFunc("/", api.WelcomeHandler)
 	http.HandleFunc("/user/", api.GetUserHandler)
 
 	log.Printf("Server starting on port %s...\n", cfg.Port)
