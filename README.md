@@ -42,8 +42,12 @@ go run cmd/server/main.go
 ```
 2. Make a GET request to `http://localhost:8080/user/{username}`
 
-> ![TIP] By default, the server runs on port `8080`. You can change this by setting the `PORT` environment variable: `PORT=3000 go run cmd/server/main.go`
->  This would start the server on port `3000`.
+> [!TIP]
+> By default, the server runs on port `8080`. You can change this by setting the `PORT` environment variable:
+> 
+> `PORT=3000 go run cmd/server/main.go`
+> 
+> This would start the server on port `3000`.
 
 ### Using Docker 🐳
 1. Build the Docker image
