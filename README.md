@@ -12,7 +12,7 @@ LRAW is a Go-based REST API that simplifies access to LeetCode user data. It wra
 ## Why this project? 🤓
 
 ### Problem 🤔
-Another day I was making a platform for LeetCode users, but I realized there's no official API from LeetCode. Some people have made their own ways to do this, but I didn't really like them. LeetCode is nice, but it does not have a REST API (which is easy to use for the majority). It provides GraphQL, but not everyone knows about that, and LeetCode officially does not `shema` even for that GraphQL. This lack of documentation and the complexity of GraphQL can be a significant hurdle for many developers who want to build applications using LeetCode data.
+Another day I was making a platform for LeetCode users, but I realized there's no official API from LeetCode. Some people have made their own ways to do this, but I didn't really like them. LeetCode is nice, but it does not have a REST API (which is easy to use for the majority). It provides GraphQL, but not everyone is familiar with it, and LeetCode does not officially provide a `schema` even for that GraphQL. This lack of documentation and the complexity of GraphQL can be a significant hurdle for many developers who want to build applications using LeetCode data.
 
 ### Solution 💡
 To fix this, I made this project. I like using Go, so I wrote it in Go. I spent some time figuring out how to get data from LeetCode, and I found the right GraphQL queries to use.
