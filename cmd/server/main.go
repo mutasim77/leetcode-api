@@ -1,19 +1,18 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"net/http"
+
+	"github.com/mutasim77/leetcode-api/internal/api"
+	"github.com/mutasim77/leetcode-api/pkg/config"
 )
 
-func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
-}
-
 func main() {
-	http.HandleFunc("/", Handler)
-	fmt.Println("Server is listening on port 8080...")
+	cfg := config.Load()
 
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		fmt.Printf("Error starting server: %v\n", err)
-	}
+	http.HandleFunc("/user/", api.GetUserHandler)
+
+	log.Printf("Server starting on port %s...\n", cfg.Port)
+	log.Fatal(http.ListenAndServe(":"+cfg.Port, nil))
 }
