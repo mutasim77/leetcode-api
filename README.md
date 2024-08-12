@@ -22,7 +22,7 @@ This project changes those hard-to-use GraphQL queries into a simple REST API. N
 ## Installation 🛠️
 1. Clone the repository
 ```bash
-git clone https://github.com/mutasim/leetcode-api.git
+git clone https://github.com/mutasim77/leetcode-api.git
 ```
 2. Navigate to the project directory
 ```bash
